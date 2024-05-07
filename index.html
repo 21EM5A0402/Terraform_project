@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        /* CSS styles here */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header h2 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .form-control {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .errorMessage {
+            color: red;
+            display: none;
+            margin-top: 5px;
+        }
+
+        .successMessage {
+            color: green;
+            display: none;
+            margin-top: 5px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .animate-circles {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .circle {
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            border-radius: 50%;
+            margin: 0 5px;
+            animation: bounce 1s infinite alternate;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .orange {
+            background-color: orange;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        @keyframes bounce {
+            to {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="header">
+                <h2>Create an Account</h2>
+            </div>
+            <form class="form" id="form">
+                <div class="form-control">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter your Username">
+                    <p class="errorMessage">Error Message</p>
+                    <p class="successMessage">Success Message</p>
+                </div>
+
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your Email">
+                    <p class="errorMessage">Error Message</p>
+                    <p class="successMessage">Success Message</p>
+                </div>
+
+                <div class="form-control">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your Password">
+                    <p class="errorMessage">Error Message</p>
+                    <p class="successMessage">Success Message</p>
+                </div>
+
+                <div class="form-control">
+                    <label for="password2">Confirm Password</label>
+                    <input type="password" id="password2" placeholder="Confirm your Password">
+                    <p class="errorMessage">Error Message</p>
+                    <p class="successMessage">Success Message</p>
+                </div>
+
+                <button>Submit</button>
+            </form>
+        </div>
+    </main>
+    <div class="animate-circles">
+        <div class="circle blue"></div>
+        <div class="circle orange"></div>
+        <div class="circle green"></div>
+    </div>
+    <script>
+        // JavaScript code here
+        // Paste your JavaScript code here
+    </script>
+</body>
+
+</html>
